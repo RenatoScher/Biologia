@@ -1,0 +1,339 @@
+:root {
+    --aniBorder: #c0392b;
+    --aniBack: #e74c3c;
+    --vegBorder: #27ae60;
+    --vegBack: #2ecc71;
+    --colorBlack: #040305;
+    --color30336b: #bb1919;
+    --colorcc0000: #cc0000;
+    --colorfuck2: #00a305;
+    --colorfuck: #008b05;
+    --colorGrey: rgb(87, 87, 87);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+S html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #050505;
+}
+
+body>div {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    position: relative;
+    top: 64px;
+}
+
+header {
+    height: fit-content;
+}
+
+h1 {
+    font-size: 75px;
+    text-align: center;
+    color: white;
+    width: 100vw;
+}
+p{
+    text-align: justify;
+}
+
+h1>#animalEmphasis {
+    color: red;
+    position: relative;
+}
+
+h1>#vegetalEmphasis {
+    color: rgb(94, 242, 94);
+    position: relative;
+}
+
+/*Animação foda*/
+@keyframes luz {
+
+    0%,
+    100% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 15px var(--colorfuck2),
+            0 0 55px var(--colorfuck2),
+            0 0 105px var(--colorfuck2);
+    }
+
+    30%,
+    70% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 15px var(--colorfuck),
+            0 0 55px var(--colorfuck),
+            0 0 105px var(--colorfuck);
+    }
+
+    50% {
+        color: var(--colorGrey);
+        text-shadow: none;
+    }
+}
+@keyframes luz2 {
+
+    0%,
+    100% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 15px var(--color30336b),
+            0 0 55px var(--color30336b),
+            0 0 105px var(--color30336b);
+    }
+
+    30%,
+    70% {
+        color: rgb(255, 255, 255);
+        text-shadow: 0 0 15px var(--colorcc0000),
+            0 0 55px var(--colorcc0000),
+            0 0 105px var(--colorcc0000);
+    }
+
+    50% {
+        color: var(--colorGrey);
+        text-shadow: none;
+    }
+}
+
+span[id="vegetalEmphasis"] {
+    animation-name: luz;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+
+}
+
+span[id="vegetalEmphasis"]:nth-of-type(2) {
+    animation-delay: 0.25s;
+
+}
+
+span[id="vegetalEmphasis"]:nth-of-type(3) {
+    animation-delay: 0.50s;
+
+}
+
+span[id="vegetalEmphasis"]:nth-of-type(4) {
+    animation-delay: 0.75s;
+
+}
+
+span[id="vegetalEmphasis"]:nth-of-type(5) {
+    animation-delay: 1.00s;
+
+}
+
+span[id="vegetalEmphasis"]:nth-of-type(6) {
+    animation-delay: 1.25s;
+
+}
+
+span[id="vegetalEmphasis"]:nth-of-type(7) {
+    animation-delay: 1.5s;
+
+}
+
+
+span[id="animalEmphasis"] {
+    animation-name: luz2;
+    animation-duration: 2.5s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+
+
+}
+
+span[id="animalEmphasis"]:nth-of-type(2) {
+    animation-delay: 0.25s;
+
+}
+
+span[id="animalEmphasis"]:nth-of-type(3) {
+    animation-delay: 0.50s;
+
+}
+
+span[id="animalEmphasis"]:nth-of-type(4) {
+    animation-delay: 0.75s;
+
+}
+
+span[id="animalEmphasis"]:nth-of-type(5) {
+    animation-delay: 1.00s;
+
+}
+
+span[id="animalEmphasis"]:nth-of-type(6) {
+    animation-delay: 1.25s;
+
+}
+
+span[id="animalEmphasis"]:nth-of-type(7) {
+    animation-delay: 1.5s;
+
+}
+
+/*Final da aminação foda*/
+
+li {
+    margin-left: 15px;
+    word-wrap: break-word;
+    margin-right: 25px;
+    text-align: justify;
+}
+
+
+
+section#prequel {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 18px;
+    background-color: #5390cc;
+    outline: #3972ab 10px solid;
+    border-radius: 5px;
+    width: 50%;
+    padding: 10px;
+    margin-top: 25px;
+    margin-bottom: 20px;
+    min-width: 320px;
+}
+
+
+main {
+    width: 100%;
+    margin-top: 100px;
+
+    display: flex;
+    justify-content: center;
+    column-gap: 15%;
+    flex-wrap: wrap;
+}
+
+article {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: center;
+    row-gap: 32px;
+    width: 30vw;
+    border-radius: 5px;
+    padding-bottom: 20px;
+    min-width: 320px;
+    margin-top: 50px;
+}
+
+article * {
+    max-width: 100%;
+}
+
+article#vegetalArticle {
+    background-color: var(--vegBack);
+    outline: solid 10px var(--vegBorder);
+}
+
+article#animalArticle {
+    background-color: var(--aniBack);
+    outline: 10px solid var(--aniBorder);
+}
+
+
+article h2 {
+    font-size: 30px;
+    text-align: center;
+}
+
+article p {
+    max-width: 95%;
+    word-wrap: break-word;
+}
+
+article section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.organelas {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: flex-start;
+    row-gap: 8px;
+    margin-left: 10px;
+}
+
+.organelas h3 {
+    align-self: center;
+}
+
+section#maquete {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 18px;
+    background-color: #5390cc;
+    outline: #3972ab 10px solid;
+    border-radius: 5px;
+    width: 50%;
+    padding: 10px;
+    margin-top: 100px;
+    min-width: 320px;
+}
+
+section#credits {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    row-gap: 18px;
+    background-color: #5390cc;
+    outline: #3972ab 10px solid;
+    border-radius: 5px;
+    width: 50%;
+    padding: 10px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    min-width: 320px;
+}
+
+figure {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+figcaption {
+    font-size: 12px;
+}
+
+
+footer {
+    position: relative;
+    bottom: 0;
+    height: 120px;
+    width: 100%;
+    background-color: #43688e;
+    display: grid;
+    place-items: center;
+}
+#goBack{
+    outline: 3px solid #003061;
+    border-radius: 5px;
+    margin: 10px;
+    border: 0px;
+    padding: 5px;
+    background-color: #3e4ba5;
+    font-style: italic;
+    font-size: 120%;
+}
