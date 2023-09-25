@@ -49,100 +49,15 @@ p{
     text-align: justify;
 }
 
-h1>#animalEmphasis {
-    color: red;
-    position: relative;
-}
-
-h1>#vegetalEmphasis {
-    color: rgb(94, 242, 94);
-    position: relative;
-}
-
-/*Animação foda*/
-@keyframes luz {
-
-    0%,
-    100% {
-        color: rgb(255, 255, 255);
-        text-shadow: 0 0 15px var(--colorfuck2),
-            0 0 55px var(--colorfuck2),
-            0 0 105px var(--colorfuck2);
-    }
-
-    30%,
-    70% {
-        color: rgb(255, 255, 255);
-        text-shadow: 0 0 15px var(--colorfuck),
-            0 0 55px var(--colorfuck),
-            0 0 105px var(--colorfuck);
-    }
-
-    50% {
-        color: var(--colorGrey);
-        text-shadow: none;
-    }
-}
-@keyframes luz2 {
-
-    0%,
-    100% {
-        color: rgb(255, 255, 255);
-        text-shadow: 0 0 15px var(--color30336b),
-            0 0 55px var(--color30336b),
-            0 0 105px var(--color30336b);
-    }
-
-    30%,
-    70% {
-        color: rgb(255, 255, 255);
-        text-shadow: 0 0 15px var(--colorcc0000),
-            0 0 55px var(--colorcc0000),
-            0 0 105px var(--colorcc0000);
-    }
-
-    50% {
-        color: var(--colorGrey);
-        text-shadow: none;
-    }
-}
-
 span[id="vegetalEmphasis"] {
     animation-name: luz;
     animation-duration: 2.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-
-
-}
-
-span[id="vegetalEmphasis"]:nth-of-type(2) {
-    animation-delay: 0.25s;
-
-}
-
-span[id="vegetalEmphasis"]:nth-of-type(3) {
-    animation-delay: 0.50s;
-
-}
-
-span[id="vegetalEmphasis"]:nth-of-type(4) {
-    animation-delay: 0.75s;
-
-}
-
-span[id="vegetalEmphasis"]:nth-of-type(5) {
-    animation-delay: 1.00s;
-
-}
-
-span[id="vegetalEmphasis"]:nth-of-type(6) {
-    animation-delay: 1.25s;
-
-}
-
-span[id="vegetalEmphasis"]:nth-of-type(7) {
-    animation-delay: 1.5s;
+    color: rgb(255, 255, 255);
+        text-shadow: 0 0 15px var(--colorfuck),
+            0 0 55px var(--colorfuck),
+            0 0 105px var(--colorfuck);
 
 }
 
@@ -152,38 +67,10 @@ span[id="animalEmphasis"] {
     animation-duration: 2.5s;
     animation-timing-function: ease-in-out;
     animation-iteration-count: infinite;
-
-
-}
-
-span[id="animalEmphasis"]:nth-of-type(2) {
-    animation-delay: 0.25s;
-
-}
-
-span[id="animalEmphasis"]:nth-of-type(3) {
-    animation-delay: 0.50s;
-
-}
-
-span[id="animalEmphasis"]:nth-of-type(4) {
-    animation-delay: 0.75s;
-
-}
-
-span[id="animalEmphasis"]:nth-of-type(5) {
-    animation-delay: 1.00s;
-
-}
-
-span[id="animalEmphasis"]:nth-of-type(6) {
-    animation-delay: 1.25s;
-
-}
-
-span[id="animalEmphasis"]:nth-of-type(7) {
-    animation-delay: 1.5s;
-
+    color: rgb(255, 255, 255);
+        text-shadow: 0 0 15px var(--color30336b),
+            0 0 55px var(--color30336b),
+            0 0 105px var(--color30336b);
 }
 
 /*Final da aminação foda*/
@@ -276,20 +163,6 @@ article section {
 
 .organelas h3 {
     align-self: center;
-}
-
-section#maquete {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    row-gap: 18px;
-    background-color: #5390cc;
-    outline: #3972ab 10px solid;
-    border-radius: 5px;
-    width: 50%;
-    padding: 10px;
-    margin-top: 100px;
-    min-width: 320px;
 }
 
 section#credits {
